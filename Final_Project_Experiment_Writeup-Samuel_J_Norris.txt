@@ -1,0 +1,29 @@
+I Got to Get the Hell Out of NYC: the search for the most affordable homes in 200k+ population cities
+
+PROJECT PROBLEM AND HYPOTHESIS
+
+With the exception of NYC, Los Angeles, and San Francisco, this project is aimed at finding the most affordable homes in cities with a population of 200k or more.  In addition, analysis will include average price of homes across 5-10 bins (i.e. 200k-300k pop, 301k-400k pop, etc.), YoY changes of these bins, and a ranking of cities with the cheapest housing AND shortest average time of homes on the market.
+
+As far as machine learning goes, I am open to ideas on how to incorporate it.  This is seemingly more of a data exploration and explicit analysis exercise, so I currently do not see where training and testing data would be needed, though am happy to change this project somehow to incorporate it.
+
+This project would highlight areas in the United States that are ripe for investment for millenials (or anyone, really) looking to leave the largest US cities, yet still looking to live in a growing middle-sized metropolitan area. 
+
+I hypothesize that the most influential variables in this dataset will be the following: YoY change in Foreclosure sales,  Median percent of price reduction, median sold price per square foot, percent of homes increasing in value, and days on market (AgeOfInventory).
+
+DATASETS
+
+The datasets available contain 102 fields covering date; regional/zip/city name; days on market; foreclosure ratio; seasonality adjustment; median listing, sold, square foot pricing by 1, 2, 3, 4, 5+ bedroom homes, condos, and duplex/triplex/multifamily homes; similar rental data across the previous dimensions listed previously; and, Zillow calculated indices on home value.
+
+DOMAIN KNOWLEDGE
+I do not have knowledge in the housing market, so this project will teach me a lot about the US housing geomarkets.  I do not think this will hurt in any way, as the Zillow dataset is very large.  I know there are many proprietary models that exist and are used to price homes properly, as well as tools used at agencies that predict housing price increases.  There are several university reports that model this already, and I will read up more about them going forward.
+
+PROJECT CONCERNS
+
+This dataset is very large.  I will need to upload the CSVs and merge them in SQL in order to query the data, as well as delete the data prior to 2012 and format the data into quarterly or half years instead of month.  From there, I will replicate several charts and graphs that were already covered in class before building out deeper parts of this project.
+My biggest fear is that Zillow data may not be fully reliable or that certain merges will not be able to happen.  Additionally, I need to find population data via zip code that projects across an entire city (cities with multiple zip codes), as that is currently not a part of the dataset.
+There is not a potential problem if the model is wrong.  The data does have listing price and price sold, so the data should be more grounded/realistic than other sets.
+
+OUTCOMES
+
+I plan on determining the ranking of cheapest homes by city that are growing or soon to become a popular destination with a high investment potential, as well as this ranking based on population size (200k-300k pop, 500-600k pop, etc.).  This will also lead to findings showing what cities are inflated in housing price, have heavy foreclosure rates, etc.
+The target audience would find this helpful in determining potential cities to move in the coming years.  
